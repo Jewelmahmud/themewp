@@ -1,0 +1,276 @@
+.s-contact {
+    padding-top: 133px;
+
+    .container {
+        position: relative;
+        margin-bottom: 96px;
+    }
+
+    .info-contact {
+        width: 100%;
+        max-width: 533px;
+
+        h1 {
+            margin-bottom: 24px;
+            font-size: 2.25rem;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            margin-bottom: 57px;
+            font-size: 0.9375rem;
+            line-height: 170%;
+            opacity: 0.7;
+        }
+
+        span {
+            color: $grey1;
+            opacity: 0.8;
+            line-height: 170%;
+        }
+
+        ul {
+            margin-bottom: 28px;
+
+            li {
+                margin-bottom: 28px;
+
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        transition: color .3s;
+                    }
+                }
+
+                .icon {
+                    margin-right: 11px;
+
+                    width: 24px;
+                    height: 24px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &:hover {
+                    span {
+                        color: $brand;
+                    }
+                }
+            }
+        }
+    }
+
+    .form {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        width: 520px;
+        height: 720px;
+        background-color: $white;
+        padding: 38px 50px 58px;
+        z-index: 2;
+        box-shadow: 0px 34px 54px rgba(110, 175, 226, 0.21);
+
+        .top {
+            margin-bottom: 30px;
+
+            p {
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 125%;
+                color: #06061E;
+            }
+        }
+
+        .form-group{
+            &:nth-child(6){
+                margin-bottom: 12px;
+            }
+            &:nth-child(7){
+                margin-bottom: 12px;
+            }
+        }
+
+    }
+
+    .map {
+        width: 100%;
+        max-width: 100%;
+        height: 427px;
+    }
+
+    .popup {
+        width: 450px;
+        height: 104px;
+        background-color: $brand;
+        padding: 0 58px;
+
+       
+
+        .text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            strong {
+                opacity: 1;
+                font-size: 1.5rem;
+                color: $white;
+            }
+
+            p {
+                color: $white;
+                opacity: 0.8;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: -40px;
+                    top: 10px;
+                    background: url(../img/pin-light.svg)no-repeat;
+                    width: 17px;
+                    height: 21px;
+                }
+
+            }
+        }
+    }
+
+    .mapboxgl-popup-content {
+        padding: 0;
+        box-shadow: initial;
+    }
+
+    @media(max-width: 1300px) {
+
+        .form {
+            right: 24px;
+        }
+    }
+
+    @media(max-width: 1070px) {
+
+        .info-contact {
+            max-width: 377px;
+        }
+    }
+
+    @media(max-width: 970px) {
+
+        .info-contact {
+            max-width: 340px;
+        }
+    }
+
+    @media(max-width: 930px) {
+        padding-top: 41px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info-contact {
+            margin-bottom: 64px;
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 46px;
+                text-align: center;
+            }
+        }
+
+        .form {
+            position: initial;
+
+            .top {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 600px) {
+
+        .container {
+            padding: 0;
+        }
+
+        .info-contact {
+            padding: 0 24px;
+        }
+
+        .form {
+            width: 100%;
+            padding: 30px 30px 49px;
+            box-shadow: none;
+        }
+
+        .map {
+            height: 506px;
+        }
+
+        .popup {
+            width: 328px;
+            height: 107px;
+            background-color: $brand;
+            padding: 0 30px;
+
+            .text {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                strong {
+                    opacity: 1;
+                    font-size: 1.5rem;
+                    color: $white;
+                }
+
+                p {
+                    color: $white;
+                    opacity: 0.8;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: -40px;
+                        top: 10px;
+                        background: url(../img/pin-light.svg)no-repeat;
+                        width: 17px;
+                        height: 21px;
+                    }
+
+                }
+            }
+        }
+    }
+}

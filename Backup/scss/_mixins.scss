@@ -1,0 +1,3 @@
+@mixin gradient($corInicio, $corFim) {
+    background: linear-gradient(103.87deg, $corInicio 6%, $corFim 114.76%);
+}

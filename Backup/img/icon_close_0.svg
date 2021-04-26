@@ -1,0 +1,7 @@
+<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="51" height="51" stroke="#0097D1"/>
+<g opacity="0.5">
+<path d="M17 34L34 17" stroke="#0097D1" stroke-width="2"/>
+<path d="M17 17L34 34" stroke="#0097D1" stroke-width="2"/>
+</g>
+</svg>
